@@ -58,7 +58,10 @@ export default function Header() {
             </div>
         </div>
         <div className="navbar-center">
-            <a className="btn btn-ghost text-xl">React User Directory</a>
+            <Link to={menuItems[0].url}>
+                <span className="btn btn-ghost text-xl">React User Directory</span>
+            </Link>
+            
         </div>
         <div className="navbar-end mr-2">
             <label className="swap swap-rotate">

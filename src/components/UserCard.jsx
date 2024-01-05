@@ -8,7 +8,9 @@ export const UserCard = ({userInfo}) => {
   return (
     <div className="card w-60 bg-base-100 shadow-xl m-2">
         <figure className="px-10 pt-10">
-            <img src={image} alt={firstName} className="rounded-xl" />
+            <Link to={`/profileDetails/${id}`}>
+                <img src={image} alt={firstName} className="rounded-xl" />
+            </Link>
         </figure>
         <div className="card-body items-center text-center">
             <h2 className="card-title">{firstName} {lastName}</h2>
